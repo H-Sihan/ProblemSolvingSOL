@@ -32,6 +32,5 @@ int main() {
     } else {
         printf("You pay the full price. Your ticket costs £%.2f.\n", ticketPrice);
     }
-
     return 0;
 }
