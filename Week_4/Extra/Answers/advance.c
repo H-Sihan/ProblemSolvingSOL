@@ -1,5 +1,4 @@
 //Print a number pyramid.
-
 #include <stdio.h>
 
 void printPyramid(int n) {
