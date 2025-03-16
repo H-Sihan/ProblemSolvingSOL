@@ -19,3 +19,10 @@ int main() {
     printf("\n"); // Move to the next line
     return 0;
 }
+
+/*
+Code version 40-49  -> No explanation
+Code version 50-59 -> Couple of sentences max.
+Code version 60-69 -> Paragraph 
+Code version 70+ -> Couple of paragraphs/detailed discussion of the topic (often their research)
+*/

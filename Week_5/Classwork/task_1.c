@@ -7,3 +7,4 @@ Challenge: Your printf() statement should only print out a single asterisk. ​U
 
 Use nested while loop to achieve the final result.
 */
+

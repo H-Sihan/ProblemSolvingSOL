@@ -16,7 +16,7 @@ int main() {
         printf("Enter your age: ");
         scanf("%d", &age);
 
-        // Calculate fare based on age
+        // Calculating fare based on age
         if (age <= 5) {
             fare = 0.0; // Free for children under 5
         } else if (age <= 18) {
