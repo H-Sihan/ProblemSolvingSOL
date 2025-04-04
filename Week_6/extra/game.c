@@ -1,3 +1,6 @@
+/*
+    A game to guess user's number 
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -9,8 +12,8 @@ int main() {
     srand(time(0));
     secretNumber = rand() % 100 + 1; // Generate a number between 1 and 100
 
-    printf("🎮 Welcome to the Number Guessing Game! 🎮\n");
-    printf("I have chosen a number between 1 and 100. Try to guess it!\n");
+    printf("\x1b[31m🎮 Welcome to the Number Guessing Game! 🎮\n\x1b[31m");
+    printf("\x1b[38;5;10mI have chosen a number between 1 and 100. Try to guess it!\n\x1b[38;5;10m");
 
     // Game loop
     do {
@@ -19,11 +22,11 @@ int main() {
         attempts++;
 
         if (guess > secretNumber) {
-            printf("Too high! Try again.\n");
+            printf("\x1b[38;5;167m	Too high! Try again.\n\x1b[38;5;167m");
         } else if (guess < secretNumber) {
-            printf("Too low! Try again.\n");
+            printf("\x1b[38;5;97mToo low! Try again.\n\x1b[38;5;97m");
         } else {
-            printf("🎉 Congratulations! You guessed the number in %d attempts.\n", attempts);
+            printf("\x1b[31m🎉 Congratulations! You guessed the number in %d attempts.\n\x1b[31m", attempts);
         }
     } while (guess != secretNumber);
 
