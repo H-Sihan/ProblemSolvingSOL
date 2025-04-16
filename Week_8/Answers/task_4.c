@@ -6,19 +6,24 @@
 */
 
 #include <stdio.h>
-#include <string.h>
 
 int main() {
     char str1[] = "Sun";
     char str2[] = "Sky";
-    char temp[10];  // Temporary array for swapping
-    
+    //int len = sizeof(str1) - 1;  // Exclude null terminator
+
     printf("Before swapping: str1 = %s, str2 = %s\n", str1, str2);
-    
-    strcpy(temp, str1);
-    strcpy(str1, str2);
-    strcpy(str2, temp);
-    
+
+    // Check if lengths are equal
+    if (strlen(str1) == strlen(str2)) {
+        for (int i = 0; i < strlen(str1); i++) {
+            // Swap character by character
+            char temp = str1[i];
+            str1[i] = str2[i];
+            str2[i] = temp;
+        }
+    }
+
     printf("After swapping: str1 = %s, str2 = %s\n", str1, str2);
     return 0;
 }

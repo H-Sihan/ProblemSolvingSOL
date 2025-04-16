@@ -5,3 +5,18 @@
         - Ensure the output shows both values before and after swapping.
 */
 
+#include <stdio.h>
+
+int main() {
+    char char1 = "X", char2 = "Y", temp;
+    
+    printf("Before swapping: num1 = %d, num2 = %d\n", char1, char2);
+    
+    // Swapping logic
+    temp = char1;
+    char1 = char2;
+    char2 = temp;
+    
+    printf("After swapping: num1 = %d, num2 = %d\n", char1, char2);
+    return 0;
+}
