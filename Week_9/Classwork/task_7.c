@@ -13,3 +13,19 @@
                 Fahrenheit = (Celsius × 9/5) + 32
                 Prints the converted temperature.
 */
+#include <stdio.h>
+
+// Function to convert Celsius to Fahrenheit
+void convertTemperature() {
+    float celsius, fahrenheit;
+    printf("Enter temperature in Celsius: ");
+    scanf("%f", &celsius);
+
+    fahrenheit = (celsius * 9/5) + 32;
+    printf("Temperature in Fahrenheit: %.2f\n", fahrenheit);
+}
+
+int main() {
+    convertTemperature(); // Call function
+    return 0;
+}
